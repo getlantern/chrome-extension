@@ -10,7 +10,7 @@ var ractive = new Ractive({
   data: { number: null }
 });
 
-var ws = new WebSocket("ws://localhost:9000/data");
+var ws = new WebSocket("ws://127.0.0.1:9000/data");
 ws.onopen = function() {
     console.log("WebSocket opened")
 };

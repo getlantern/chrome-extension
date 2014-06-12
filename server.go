@@ -19,8 +19,8 @@ var (
 
 func main() {
 	http.Handle("/data", websocket.Handler(handleSocket))
-	log.Println("About to listen for HTTP traffic at localhost:9000")
-	http.ListenAndServe("localhost:9000", nil)
+	log.Println("About to listen for HTTP traffic at 127.0.0.1:9000")
+	http.ListenAndServe("127.0.0.1:9000", nil)
 }
 
 func handleSocket(ws *websocket.Conn) {

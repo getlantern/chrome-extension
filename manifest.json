@@ -6,8 +6,8 @@
   "version": "0.1",
 
   "permissions": [
-    "http://localhost:9000/*",
-    "http://s3.amazonaws.com/oxtoacart/chrome-extension-poc/index.html"
+    "http://127.0.0.1:9000/*",
+    "https://s3.amazonaws.com/oxtoacart/chrome-extension-poc/index.html"
   ],
 
   "browser_action": {
