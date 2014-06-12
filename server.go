@@ -19,7 +19,6 @@ var (
 
 func main() {
 	http.Handle("/data", websocket.Handler(handleSocket))
-	http.Handle("/", http.FileServer(http.Dir(".")))
 	log.Println("About to listen for HTTP traffic at localhost:9000")
 	http.ListenAndServe("localhost:9000", nil)
 }

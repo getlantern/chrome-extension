@@ -1,8 +1,7 @@
 This is a proof of concept showing a Lantern extension with a popup that can
-interact with a locally running backend and a page served from that locally
-running backend.
+interact with a locally running backend and a page served from S3.
 
-The webpage lives at http://localhost:9000/
+The webpage lives at http://s3.amazonaws.com/oxtoacart/chrome-extension-poc/index.html
 
 The extension can be installed through chrome://extensions using the 
 "Load Unpacked Extension" button.
@@ -26,11 +25,9 @@ Here are some of the core concepts tested in this POC:
 3. Based on data received from the backend, the extension can update its action
    icon in the browser toolbar.
 4. Interestingly, the extension can use an iframe to show content served from
-   the local backend, meaning that we can display dynamically generated content
-   in the popup (though in reality we'll be doing all our templating in the
-   front-end anyway), but more importantly it means that we make some types of
-   updates to how the popup works without having to deploy a new version of the
-   extension to the web store!  That could be huge.
+   the S3 content, meaning that we can use S3 to push updates to the content of
+   the popup without having to deploy a new version of the extension.  That
+   could be huge!
 
 This demo happens to use ractive.js because Ox finds it easier to use than
 angularjs, but that doesn't mean that we need to (or even should) use ractive.js
