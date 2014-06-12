@@ -1,10 +1,7 @@
 This is a proof of concept showing a Lantern extension with a popup that can
 interact with a locally running backend and a page served from S3.
 
-The webpage lives at http://s3.amazonaws.com/oxtoacart/chrome-extension-poc/index.html
-
-Right now this is http because I didn't want to mess with certs for the test
-back-end and http websockets aren't allowed from https pages.
+The webpage lives at https://s3.amazonaws.com/oxtoacart/chrome-extension-poc/index.html
 
 The extension can be installed through chrome://extensions using the 
 "Load Unpacked Extension" button.
